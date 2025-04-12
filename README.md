@@ -13,10 +13,7 @@ A high-performance multithreaded proxy web server designed to handle simultaneou
 - [Installation](#installation)
   - [Prerequisites](#prerequisites)
   - [Building with CMake](#building-with-cmake)
-- [Usage](#usage)
 - [File Structure](#file-structure)
-- [Known Issues and Future Improvements](#known-issues-and-future-improvements)
-- [Contact](#contact)
 
 ## Introduction
 
@@ -94,3 +91,21 @@ This ensures that the proxy correctly understands and forwards client requests t
     
      ```bash
      http://localhost:8080
+
+### File Structure
+  **proxy_server_withCache.c:**
+    Main server code implementing socket creation, client handling, caching, and thread management.
+  
+  **proxy_parse.c & proxy_parse.h:**
+    Modules containing functions to parse and process HTTP requests and headers.
+  
+  **CMakeLists.txt:**
+    CMake configuration file for building the project.
+  
+  **Makefile:**
+    Alternative build script for those who prefer using GNU Make.
+  
+  **README.md:**
+    This file, providing a comprehensive overview of the project.
+
+
