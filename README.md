@@ -39,8 +39,6 @@ This project implements a proxy web server that accepts HTTP requests from clien
 - **Error Handling:**  
   Provides detailed error responses for various HTTP error codes (400, 403, 404, 500, 501, 505), with appropriate error pages and headers.
   
-- **CMake Integration:**  
-  The build process is managed with CMake, providing a modern, cross-platform build system for compiling the project.
 
 ## Technology Overview
 
@@ -80,3 +78,19 @@ This ensures that the proxy correctly understands and forwards client requests t
    ```bash
    git clone https://github.com/your_username/Proxy-Web-Server.git
    cd Proxy-Web-Server
+
+2. **Open the project in code Editor(VS CODE)**
+   
+3. **Run make command in your terminal (After moving to prper directory using cd)**
+   
+     ```bash
+     make
+3. **Run folloowing command in your terminal**
+   
+    ```bash
+    ./proxy 8080 # here 8080 is default port
+    
+5.  **Open your web browser and navigate to:**
+    
+     ```bash
+     http://localhost:8080
